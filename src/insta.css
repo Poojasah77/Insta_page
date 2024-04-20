@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 200px;
+  }
+  
+  .main {
+    flex: 1;
+  }
+  
+  .suggestions {
+    width: 200px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar,
+    .main,
+    .suggestions {
+      width: 100%;
+    }
+  }
+  
